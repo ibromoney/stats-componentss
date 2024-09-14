@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Stats preview card component</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    .container{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* gap: 30px; */
+      padding: 3%;
+      background-color: hsl(233, 47%, 7%);
+    }
+    .item{
+      width: 35%;
+      height: 250px;
+      background-color:hsl(244, 38%, 16%);
+    }
+    .item:last-child{
+      background-image: url(./images/image-header-desktop.jpg);
+      background-color: hsl(277, 64%, 61%);
+      background-blend-mode: soft-light;
+    }
+
+    .con-r{
+      width: 50%;
+      display: flex;
+      align-items: center;
+      padding: 3%;
+      
+    }
+    .item-number{
+      height: 40px;
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+    
+    }
+    .item-number>p{
+     color:  hsla(0, 0%, 100%, 0.75);
+     margin-left: 10px;
+     font-size: 0.3rem;
+     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .item>p{
+      color:  hsla(0, 0%, 100%, 0.75);
+      margin-left: 20px;
+      margin-top: 15px;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 0.5rem;
+    }
+    .item>h2{
+      color:  hsl(0, 0%, 100%);
+      margin-left: 20px;
+      margin-top: 50px;
+      font-size: 1rem;
+      
+    }
+    .item-number>h2{
+      color: hsl(0, 0%, 100%);
+      margin-top: 30px;
+      margin-left: 10px;
+      font-size: 0.9rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .item>img{
+      width: 100%;
+      height: 100%;
+      background-color: hsl(277, 64%, 61%);
+    }
+
+    @media screen and (max-width:470px) {
+      .container{
+        flex-direction: column;
+      }
+      
+    }
+
+ 
+
+  </style>
+</head>
+<body>
+     <div class="container">
+      <div class="item">
+        <h2 >Get <span style="color: hsl(277, 64%, 61%);">insight</span> that help your business grow.</h2>
+        <p>Discover the benefit of data analytics and 
+          make <br>better decisions regarding revenue and custormers 
+          <br>experience,overall efficiency</p>
+          <div class="con-r">
+            <div class="item-number">
+              <h2>10k+</h2>
+              <p>COMPANIES</p>
+            </div>
+            <div class="item-number">
+              <h2>314</h2>
+              <p>TEMPLATES</p>
+            </div>
+            <div class="item-number">
+              <h2>12M+</h2>
+              <p>QUERIES</p>
+            </div>
+          </div>
+      </div>
+      <div class="item"></div>
+     </div>
+</body>
+</html>
